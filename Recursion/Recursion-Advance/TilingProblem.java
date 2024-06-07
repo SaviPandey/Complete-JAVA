@@ -11,8 +11,8 @@ public class TilingProblem {
         // horizontal tile place
         int fnm2 = tilingProb(n-2);
 
-        int tol = fnm1 + fnm2;
-        return tol;
+        int tolWays = fnm1 + fnm2;
+        return tolWays;
 
     }
     public static void main(String args[]){
