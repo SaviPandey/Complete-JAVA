@@ -15,6 +15,7 @@ public class Factorial {
         int sum = n + sumNatural(n-1);
         return sum;
     }
+    
     //Fibonacci Series : Print Nth Fibonacci number
     public static int nthFibo(int n){
         if(n==1 || n==0){
