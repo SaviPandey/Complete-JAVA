@@ -11,6 +11,6 @@ public class PrintDigits {
         System.out.print(digits[lastDigit]+" ");
     }
     public static void main(String args[]){
-        printDigits(1947);
+        printDigits(2012);
     }
 }
