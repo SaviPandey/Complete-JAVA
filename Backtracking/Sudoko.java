@@ -2,9 +2,8 @@ public class Sudoko {
     public static boolean isSafe(int sudoku[][], int row, int col, int digit){
         //column
         for(int i=0; i<=8; i++){
-            if(sudoku[i][col] == digit){
+            if(sudoku[i][col] == digit)
                 return false;
-            }
         }
         //row
         for(int j=0; j<=8; j++){
