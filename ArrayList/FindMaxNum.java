@@ -10,8 +10,9 @@ public class FindMaxNum {
         list.add(24);
 
         for(int i=0; i<list.size(); i++){
-            if(list.get(i) > maxNum )
-                maxNum = list.get(i);
+            // if(list.get(i) > maxNum )
+            //     maxNum = list.get(i);
+            maxNum = Math.max(maxNum, list.get(i));
         }
         System.out.println("Maximum : "+maxNum);
         
