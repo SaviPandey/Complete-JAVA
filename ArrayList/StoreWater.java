@@ -7,9 +7,7 @@ public class StoreWater {
         for(int i=0 ;  i<n  ; i++){
             for(int j=i+1; j<n; j++){
                 int waterStored = Math.min(list.get(i), list.get(j)) * (j - i);
-                if(waterStored > maxWaterStored){
-                    maxWaterStored = waterStored;
-                }
+                maxWaterStored = Math.max(maxWaterStored, waterStored);
             }
         }
         return maxWaterStored;
