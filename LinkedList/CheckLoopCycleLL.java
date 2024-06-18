@@ -1,3 +1,4 @@
+// Floyd's Cycle Finding Algorithm
 public class CheckLoopCycleLL {
     public static class Node {
         int data ;
@@ -45,7 +46,7 @@ public class CheckLoopCycleLL {
                 return true; //cycle exists
             } 
         }
-        return false;
+        return false; //cycle doesn't exists
     }
 
     public static void main(String args[]){
