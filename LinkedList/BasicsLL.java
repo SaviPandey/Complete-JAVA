@@ -116,6 +116,25 @@ public class BasicsLL {
         }
         return -1;
     }
+
+    public int recursiveHelper(Node head, int val){
+        if(head == null){
+            return -1;
+        }
+        if(head.data == val){
+            return 0 ;
+        }
+        int idx = recursiveHelper(head.next, val);
+        if(idx == -1){
+            return -1;
+        }
+
+        return idx+1;
+    }
+
+    public int recursiveSearch(int key){
+        return recursiveHelper(head.next, key);
+    }
     public static void main(String args[]){
         BasicsLL ll = new BasicsLL();
         ll.addFirst(2);
@@ -132,6 +151,9 @@ public class BasicsLL {
         // ll.deleteLast();
         // ll.printLL();
         // System.out.println(size);
-        System.out.println(ll.iterativeSearch(10));
+
+        // System.out.println(ll.iterativeSearch(10));
+
+        System.out.println(ll.recursiveSearch(10));
     }
 }
