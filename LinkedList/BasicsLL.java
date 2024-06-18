@@ -103,6 +103,19 @@ public class BasicsLL {
         }
         System.out.println("null");
     }
+
+    public int iterativeSearch(int val){
+        Node temp = head;
+        int i = 0;
+        while(temp != null){
+            if(temp.data ==  val){
+                return i;
+            } 
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
     public static void main(String args[]){
         BasicsLL ll = new BasicsLL();
         ll.addFirst(2);
@@ -113,11 +126,12 @@ public class BasicsLL {
 
         ll.printLL();
         // System.out.println(size);
-        ll.deleteFirst();
-        ll.printLL();
+        // ll.deleteFirst();
+        // ll.printLL();
 
-        ll.deleteLast();
-        ll.printLL();
+        // ll.deleteLast();
+        // ll.printLL();
         // System.out.println(size);
+        System.out.println(ll.iterativeSearch(10));
     }
 }
