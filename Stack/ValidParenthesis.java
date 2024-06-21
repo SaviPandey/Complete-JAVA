@@ -22,7 +22,7 @@ public class ValidParenthesis {
         return s.isEmpty();   //At end if stack is empty then true, else false
     }
     public static void main(String[] args) {
-        String str = "([]{})";
+        String str = "()[]{}]";
         System.out.println(isValid(str));
     }
 }
