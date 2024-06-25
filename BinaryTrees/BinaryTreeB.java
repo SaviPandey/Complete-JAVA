@@ -67,6 +67,16 @@ public class BinaryTreeB {
         int rCount = countNodes(root.right);
         return lCount + rCount + 1; //count of leftSubtree + rightSubTree + 1 (for root node)
     }
+
+    public static int sumNodes(Node root) {
+        if(root == null) {
+            return 0;
+        }
+        int leftSum = sumNodes(root.left);
+        int rightSum = sumNodes(root.right);
+
+        return leftSum + rightSum + root.data;
+    }
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
@@ -85,5 +95,6 @@ public class BinaryTreeB {
         System.out.println();
         System.out.println("Height: "+height(root));
         System.out.println("Number of Nodes: "+countNodes(root));
+        System.out.println("Sum of all Nodes: "+sumNodes(root));
     }
 }
