@@ -59,6 +59,14 @@ public class BinaryTreeB {
 
         return height;
     }
+    public static int countNodes(Node root) {
+        if(root == null) {
+            return 0;
+        }
+        int lCount = countNodes(root.left);
+        int rCount = countNodes(root.right);
+        return lCount + rCount + 1; //count of leftSubtree + rightSubTree + 1 (for root node)
+    }
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
@@ -76,5 +84,6 @@ public class BinaryTreeB {
         postOrder(root);
         System.out.println();
         System.out.println("Height: "+height(root));
+        System.out.println("Number of Nodes: "+countNodes(root));
     }
 }
