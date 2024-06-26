@@ -49,5 +49,6 @@ public class DiamterAppro2 {
 
         System.out.println("Root Node: "+root.data);
         System.out.println("Diamter of Tree: "+diameter(root).diameter);
+        System.out.println("Height of Tree: "+diameter(root).height);
     }
 }
