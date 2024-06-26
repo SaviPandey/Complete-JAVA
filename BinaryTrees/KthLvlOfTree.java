@@ -24,8 +24,8 @@ public class KthLvlOfTree {
 
     //Iterative approach
     public static void kthLevel(Node root, int k) {
-        if (root == null) return;
-        if (k == 0) {
+        if (root == null) return;                   //Tree is Null
+        if (k == 0) {                               //Level - 0
             System.out.print(root.data + " ");
             return;
         }
