@@ -71,14 +71,12 @@ public class DeleteNode {
         for(int i=0; i<val.length; i++){
             root = insertNode(root, val[i]);
         }
+        System.out.print("BeFore : ");
         inorder(root);
 
-        int k = 6; //Delete this Node
-
-
-        root = delete(root, k); 
+        root = delete(root, 10); 
         //After Delete Print
-        System.out.println();
+        System.out.print("\nAfter : ");
         inorder(root);
     }
 }
