@@ -14,7 +14,7 @@ public class IterateHashMap {
 
         //Loop
         for (String k : key) {
-            System.out.print("Key=" + k);
+            System.out.print("Key = " +k+",value = "+hm.get(k)+" ");
         }
     }
 }
