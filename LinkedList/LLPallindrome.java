@@ -1,4 +1,4 @@
-public class Pallindrome {
+public class LLPallindrome {
     public static class Node {
         int data ;
         Node next ;
@@ -76,7 +76,7 @@ public class Pallindrome {
     }
 
     public static void main(String args[]){
-        Pallindrome p = new Pallindrome();
+        LLPallindrome p = new LLPallindrome();
         p.addLast(1);
         p.addLast(2);
         p.addLast(2);

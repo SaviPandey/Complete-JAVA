@@ -24,7 +24,7 @@ public class BasicHashMap {
         System.out.println(hm.remove("US")); //print the value of US
         System.out.println(hm);
 
-        System.out.println(hm.remove("Inddonesia")); //Null
+        System.out.println(hm.remove("Indonesia")); //Null
         System.out.println(hm);
 
         //Size
