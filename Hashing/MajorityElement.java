@@ -17,6 +17,5 @@ public class MajorityElement {
         }
 
     }
-
     //Time Complexity : O(n)
 }
