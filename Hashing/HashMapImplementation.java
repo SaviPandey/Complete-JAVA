@@ -1,6 +1,6 @@
 import java.util.*;
 public class HashMapImplementation{
-    static class HashMap<K, V>{
+    static class HashMap<K, V>{ //generics
         private class Node{
             K key;
             V value;
@@ -10,7 +10,7 @@ public class HashMapImplementation{
                 this.value = value;
             }
         }
-        private int n; //n
+        private int n; //n Size of LinkedList on each bucket 
         private int N;
         private LinkedList<Node> buckets[]; //N : buckets.length
 
