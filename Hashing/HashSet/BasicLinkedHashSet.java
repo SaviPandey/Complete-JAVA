@@ -1,8 +1,6 @@
 package HashSet;
 import java.util.LinkedHashSet;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class BasicLinkedHashSet {
     public static void main(String[] args) {
         LinkedHashSet<String> lhs = new LinkedHashSet<>();
