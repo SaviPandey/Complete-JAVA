@@ -1,3 +1,4 @@
+package HashMap;
 import java.util.TreeMap;
 public class TreeMapImple {
     public static void main(String args[]){

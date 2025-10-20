@@ -1,3 +1,4 @@
+package HashMap;
 import java.util.HashMap;
 
 //Time-Complexity : O(n)
