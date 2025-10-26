@@ -65,7 +65,7 @@ public class WordBreakProblem {
     }
     public static void main(String[] args) {
         String words[] = {"i", "like", "sam", "samsung", "mobile", "ice"};
-        String key = "ilikesamsung";
+        // String key = "ilikesamsung";
         String key2 = "ilikesung";
 
         for(String word : words){
