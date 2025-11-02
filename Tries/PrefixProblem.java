@@ -48,7 +48,7 @@ public class PrefixProblem {
     }
     public static void printTrie(Node node, String word){
         if(node.eow == true){
-            System.err.println(word);
+            System.out.println(word);
         }
         for(int i=0; i<26; i++){
             if(node.children[i] != null){
