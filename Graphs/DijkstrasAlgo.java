@@ -56,7 +56,7 @@ public class DijkstrasAlgo {
     }
 
     // Dijkstra's Algorithm using Priority Queue
-    public static void dijkstra(ArrayList<Edge> graph[], int src) {
+    static void dijkstra(ArrayList<Edge> graph[], int src) {
 
         int dist[] = new int[graph.length];
 
